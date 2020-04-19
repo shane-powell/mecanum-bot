@@ -6,8 +6,9 @@ left = DRV8830(I2C_ADDR1)
 right = DRV8830(I2C_ADDR3)
 
 # Move forward
-#left.set_direction('forward')
+left.set_voltage(5)
 left.forward()
+right.set_voltage(5)
 right.forward()
 motor.one.forwards()
 motor.two.forwards()
